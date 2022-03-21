@@ -1,5 +1,6 @@
 ## Steps to build
 ```
+sudo apt-get install docker.io
 sudo docker build -t ros2java-android-build ./
 
 # without `--net=host`, vcs tools failed to fetch source code from github.
