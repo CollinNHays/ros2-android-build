@@ -16,10 +16,10 @@ https://raw.githubusercontent.com/ros2-java/ros2_java/434e6f55253bfe2cb9ce34799f
 
 ## Steps to build
 ```
-docker build -t ros2java-android-build ./
+sudo docker build -t ros2java-android-build ./
 
 # without `--net=host`, vcs tools failed to fetch source code from github.
-docker run -it --rm --net=host -v ${PWD}/output:/root/output ros2java-android-build /root/workspace/build-android.sh
+sudo docker run -it --rm --net=host -v ${PWD}/output:/root/output ros2java-android-build /root/workspace/build-android.sh
 
 ```
 
