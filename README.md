@@ -1,19 +1,3 @@
-# ros2-android-build
-
-Build rcljava for android.  
-
-
-## Versions & Envs
-
-- NDK:  android-ndk-r23b
-- ABI: arm64-v8a  
-- Android API Level(minSdkVersion): android-21
-
-## ROS2 java version  
-
-https://raw.githubusercontent.com/ros2-java/ros2_java/434e6f55253bfe2cb9ce34799fe548bbf4998d0e/ros2_java_android.repos
-
-
 ## Steps to build
 ```
 sudo docker build -t ros2java-android-build ./
@@ -42,6 +26,22 @@ app
 
 ```
 Refer to example project: https://github.com/YasuChiba/ros2-android-test-app
+
+# ros2-android-build
+
+Build rcljava for android.  
+
+
+## Versions & Envs
+
+- NDK:  android-ndk-r23b
+- ABI: arm64-v8a  
+- Android API Level(minSdkVersion): android-21
+
+## ROS2 java version  
+
+https://raw.githubusercontent.com/ros2-java/ros2_java/434e6f55253bfe2cb9ce34799fe548bbf4998d0e/ros2_java_android.repos
+
 
 ## Note  
 Build `ros2_android` and `ros2_android_examples` by this Dockerfile is currently not supported.  
